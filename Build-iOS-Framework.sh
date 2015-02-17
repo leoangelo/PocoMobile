@@ -23,11 +23,11 @@ findlib () {
   find -L "${1}/${2}" -name "lib${3}.a"
 }
 
-# Libraries to include inside the Framework
+# Libraries to include inside the Frameworks
 NAME="Poco"
 INCLUDE_PATH="Includes"
 LIBRARY_PATH="Libraries"
-LIBRARY_NAMES="PocoFoundation PocoNet PocoJSON"
+LIBRARY_NAMES="PocoFoundation PocoNet PocoJSON PocoData PocoDataSQLite PocoUtil"
 ARCHITECTURES="arm64 armv7 armv7s i686"
 FRAMEWORK="Frameworks/${NAME}.framework"
 
