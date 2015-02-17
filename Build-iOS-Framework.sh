@@ -28,7 +28,7 @@ NAME="Poco"
 INCLUDE_PATH="Includes"
 LIBRARY_PATH="Libraries"
 LIBRARY_NAMES="PocoFoundation PocoNet PocoData PocoDataSQLite PocoUtil PocoXML"
-ARCHITECTURES="arm64 armv7 armv7s i686"
+ARCHITECTURES="arm64 armv7 i386 x86_64"
 FRAMEWORK="Frameworks/${NAME}.framework"
 
 # Output framework path

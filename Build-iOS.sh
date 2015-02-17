@@ -9,7 +9,7 @@ git submodule update
 # Build Poco
 cd Source/
 
-OMITTED_LIBS=CppParser,CodeGeneration,Remoting/RemoteGen,Crypto,NetSSL_OpenSSL,NetSSL_Win,Net,Data/ODBC,Data/MySQL,MongoDB,PageCompiler,PDF,SevenZip,ApacheConnector,Zip
+OMITTED_LIBS=CppParser,CodeGeneration,Remoting/RemoteGen,Crypto,NetSSL_OpenSSL,NetSSL_Win,Data/ODBC,Data/MySQL,MongoDB,PageCompiler,PDF,SevenZip,ApacheConnector,Zip
 
 # Build iPhone libraries
 ./configure --config=iPhone-clang-libc++ --no-tests --no-samples --omit=--omit=$OMITTED_LIBS
@@ -19,4 +19,5 @@ make IPHONE_SDK_VERSION_MIN=5.0 POCO_TARGET_OSARCH=arm64 -s -j2
 
 # Build iPhone simulator libraries
 ./configure --config=iPhoneSimulator-clang-libc++ --no-tests --no-samples --omit=--omit=$OMITTED_LIBS
-make -s -j2
+make IPHONE_SDK_VERSION_MIN=5.0 POCO_TARGET_OSARCH=i386 -s -j2
+make IPHONE_SDK_VERSION_MIN=5.0 POCO_TARGET_OSARCH=x86_64 -s -j2
