@@ -27,7 +27,7 @@ findlib () {
 NAME="Poco"
 INCLUDE_PATH="Includes"
 LIBRARY_PATH="Libraries"
-LIBRARY_NAMES="PocoFoundation PocoNet PocoJSON PocoData PocoDataSQLite PocoUtil"
+LIBRARY_NAMES="PocoFoundation PocoNet PocoJSON PocoData PocoDataSQLite"
 ARCHITECTURES="arm64 armv7 armv7s i686"
 FRAMEWORK="Frameworks/${NAME}.framework"
 
