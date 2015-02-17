@@ -1,3 +1,5 @@
 [submodule "Source"]
 	path = Source
 	url = https://github.com/pocoproject/poco.git
+	ignore = untracked
+	fetchRecurseSubmodules = false
