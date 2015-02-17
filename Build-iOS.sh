@@ -9,7 +9,7 @@ git submodule update
 # Build Poco
 cd Source/
 
-OMITTED_LIBS=CppParser,CodeGeneration,Remoting/RemoteGen,Crypto,NetSSL_OpenSSL,NetSSL_Win,Net,Data/ODBC,Data/MySQL,MongoDB,PageCompiler,PDF,SevenZip,XML,ApacheConnector,Zip
+OMITTED_LIBS=CppParser,CodeGeneration,Remoting/RemoteGen,Crypto,NetSSL_OpenSSL,NetSSL_Win,Net,Data/ODBC,Data/MySQL,MongoDB,PageCompiler,PDF,SevenZip,ApacheConnector,Zip
 
 # Build iPhone libraries
 ./configure --config=iPhone-clang-libc++ --no-tests --no-samples --omit=--omit=$OMITTED_LIBS
