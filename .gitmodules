@@ -1,4 +1,0 @@
-[submodule "Source"]
-	path = Source
-	url = https://leoangelo@github.com/leoangelo/poco.git
-	fetchRecurseSubmodules = false
